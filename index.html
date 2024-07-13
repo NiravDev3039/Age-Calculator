@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Age Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-gradient-light flex items-center justify-center min-h-screen p-4">
+
+    <div id="formContainer" class="form-container bg-white p-8 rounded-lg shadow-2xl w-full max-w-md">
+        <h1 id="title" class="text-4xl font-bold mb-6 text-center text-indigo-700 text-light">Age Calculator</h1>
+        <form id="ageForm" class="space-y-6">
+            <div>
+                <label for="dob" id="dobLabel" class="block text-gray-700 font-medium text-light">Date of Birth:</label>
+                <input type="date" id="dob" class="custom-calendar mt-2 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-transparent dark:border-gray-600 dark:bg-gray-700 dark:text-gray-300" required>
+            </div>
+            <div class="flex justify-between space-x-4">
+                <button type="submit" class="w-full bg-indigo-600 text-white py-3 px-6 rounded-md text-lg font-semibold hover:bg-indigo-700 transition-transform transform hover:scale-105">Calculate Age</button>
+                <button type="button" id="clearButton" class="w-full bg-gray-400 text-white py-3 px-6 rounded-md text-lg font-semibold hover:bg-gray-500 transition-transform transform hover:scale-105">Clear</button>
+            </div>
+        </form>
+        <div id="result" class="mt-6 text-center text-xl font-semibold text-gray-800 text-light"></div>
+        <div class="mt-6 text-center">
+            <button id="themeToggle" class="bg-yellow-500 text-white py-2 px-4 rounded-md font-semibold hover:bg-yellow-600 transition-transform transform hover:scale-105">Toggle Dark Mode</button>
+        </div>
+    </div>
+<script src="./js/script.js"></script>
+
+</body>
+</html>
